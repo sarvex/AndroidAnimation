@@ -6,8 +6,11 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Pair;
 import android.view.View;
 import android.view.animation.OvershootInterpolator;
 import android.widget.EditText;
@@ -103,5 +106,11 @@ public class MainActivity extends AppCompatActivity {
     animatorSet.play(welcomeAnimator).after(profilePictureAnimator);
     animatorSet.play(welcomeAnimator).before(signInAnimator);
     animatorSet.start();
+  }
+
+  public void showSecondActivity(View view) {
+    ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(this, new Pair<View, String>(welcome, "welcome"),
+        new Pair<View, String>(profilePicture, "profile_picture"));
+    startActivity(new Intent(this, SecondActivity.class), options.toBundle());
   }
 }

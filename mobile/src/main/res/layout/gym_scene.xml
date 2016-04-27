@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+  <LinearLayout
+    android:id="@+id/row_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:id="@+id/photo_3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:padding="8sp"
+      android:src="@mipmap/photo3"/>
+
+    <ImageView
+      android:id="@+id/photo_4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:padding="8sp"
+      android:src="@mipmap/photo4"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/row_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+      android:id="@+id/photp_6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:padding="8sp"
+      android:src="@mipmap/photo6"/>
+
+    <ImageView
+      android:id="@+id/photo_7"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:padding="8sp"
+      android:src="@mipmap/photo7"/>
+  </LinearLayout>
+</LinearLayout>
